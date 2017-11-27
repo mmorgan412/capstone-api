@@ -13,7 +13,8 @@ curl "${API}${URL_PATH}" \
       "time": "'"${TIME}"'",
       "description": "'"${DESCRIPTION}"'",
       "cost": "'"${COST}"'",
-      "notes": "'"${NOTES}"'"
+      "notes": "'"${NOTES}"'",
+      "pet_id": "'"${PET_ID}"'"
     }
   }'
 
