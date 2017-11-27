@@ -3,14 +3,8 @@ class PetsController < ProtectedController
 
   def index
     @pets = current_user.pets.all
-    if params[:rating]
-      @pets = current_user.pets.search(params[:rating])
-      render json: @pets
-    else
-      @pets = current_user.pets.all
 
       render json: @pets
-    end
   end
 
   # GET /pets/1
