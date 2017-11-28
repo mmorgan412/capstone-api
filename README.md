@@ -1,5 +1,9 @@
 Backend README TBD
 
+## ERD
+
+https://i.imgur.com/nwUgwIR.jpg
+
 ### Authentication
 
 | Verb   | URI Pattern            | Controller#Action |
