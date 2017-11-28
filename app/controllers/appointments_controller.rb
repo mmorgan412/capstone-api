@@ -3,7 +3,8 @@ class AppointmentsController < ProtectedController
 
   # GET /appointments
   def index
-    @appointments = current_user.appointments.all
+    current_pet = current_user.pets.find(params[:pet_id])
+    @appointments = current_pet.appointments
 
     render json: @appointments
   end
@@ -50,6 +51,6 @@ class AppointmentsController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def appointment_params
-      params.require(:appointment).permit(:date, :time, :description, :cost, :notes, :pet_id)
+      params.require(:appointment).permit(:date, :time, :description, :cost, :weight, :notes, :pet_id)
     end
 end
