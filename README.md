@@ -1,4 +1,3 @@
-Backend README TBD
 
 ## App
   https://mmorgan412.github.io/capstone-front-end/
